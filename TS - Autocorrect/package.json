@@ -1,0 +1,20 @@
+{
+  "name": "autocomplete",
+  "version": "1.0.0",
+  "description": "autocomplete and autosuggest",
+  "scripts": {
+    "build": "tsc",
+    "buildrun": "tsc && node built/index.js",
+    "run": "node built/index.js",
+    "start": "node built/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mirania",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.50"
+  },
+  "dependencies": {
+    "js-levenshtein": "^1.1.6"
+  }
+}
