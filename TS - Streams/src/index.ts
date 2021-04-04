@@ -29,7 +29,7 @@ const map = Stream.of("a", "b", "c", "d", "e")
         e => e,
         e => e.charCodeAt(0)
     ));
-console.log(map); [2].flatMap
+console.log(map);
 
 console.log("-".repeat(20));
 
