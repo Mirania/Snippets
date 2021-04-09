@@ -199,11 +199,9 @@ export abstract class BlockingIntermediateOperation<T, U> extends IntermediateOp
  */
 export abstract class IteratorOperation<T> extends Operation<T, T> {
 
-    public acknowledgeDone() { /* no-op */ };
+    public acknowledgeDone(): void { /* no-op */ };
 
-    public receive(): void {
-        this.supply();
-    }
+    public receive(): void { /* no-op */ };
 
     /**
      * sends an element to the operation chain.

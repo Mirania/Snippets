@@ -43,7 +43,7 @@ export class StreamWorker<T> {
 
         this.pipeline.append(terminal);
         while (!terminal.isPipelineDone()) {
-            this.pipeline.receive();
+            this.pipeline.supply();
         }
         this.closed = true;
         return terminal.getResult();
