@@ -1,0 +1,21 @@
+{
+  "name": "deco",
+  "version": "1.0.0",
+  "description": "deco",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "buildrun": "tsc && node built/impl/index.js",
+    "run": "node built/impl/index.js",
+    "start": "node built/impl/index.js",
+    "test": "node built/test/tests.js"
+  },
+  "author": "Me",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/node": "^12.7.2"
+  }
+}
