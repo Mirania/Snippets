@@ -1,0 +1,17 @@
+{
+  "name": "shellwrapper",
+  "version": "1.0.0",
+  "description": "cmd/shell wrapper",
+  "scripts": {
+    "build": "tsc",
+    "buildrun": "tsc && node built/index.js",
+    "run": "node built/index.js",
+    "start": "node built/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mirania",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.25"
+  }
+}
