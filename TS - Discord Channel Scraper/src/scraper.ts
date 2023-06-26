@@ -23,8 +23,8 @@ client.login(process.argv[2]); // for example: asjkhfhd384jf89938j498._tm3984
 // based on https://stackoverflow.com/a/71620968
 // note that this starts at the newest message and "scrolls up" to the oldest message.
 async function processAllMessages(action: (message: Message<true>) => Promise<void>) {
-    const guild = await client.guilds.fetch(vars.guild); // for example: 012930821409823908490
-    const channel = await guild.channels.fetch(vars.channel) as TextChannel; // for example: 012930821409823908490
+    const guild = await client.guilds.fetch(process.argv[3]); // for example: 012930821409823908490
+    const channel = await guild.channels.fetch(process.argv[4]) as TextChannel; // for example: 012930821409823908490
 
     // Create message pointer
     let message = await channel.messages
